@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1 id="h">TIRU-CASIO</h1>
+        <input type="text" id="inp" placeholder="0"><br><b id="bld"></b>
+        <textarea name="" id="area" rows="5" cols="40" ></textarea><br>
+        <div class="row">
+            <button onclick="num(1)">1</button>
+            <button onclick="num(2)">2</button>
+            <button onclick="num(3)">3</button>
+            <button onclick="num(4)">4</button>
+            <button onclick="num(5)">5</button>
+            <button onclick="num(6)">6</button>
+            <button onclick="num(7)">7</button>
+            <button onclick="num(8)">8</button>
+            <button onclick="num(9)">9</button>
+            <button onclick="num(0)">0</button>
+            <button onclick="eql()" id="eq">=</button>
+            <button onclick="ac()" ondblclick="acc()" id="al">AC</button>
+            <button onclick="del()" id="del">DEL</button>
+            <button onclick="operator('+')">+</button>
+            <button onclick="operator('-')">-</button>
+            <button onclick="operator('*')"><span>&#215;</span></button>
+            <button onclick="operator('/')">/</button>
+            <button onclick="operator('%')">%</button>
+            <button onclick="operator('^')">^</button>
+            <button onclick="operator('**')">pow</button>
+            <button onclick="sqt()">sqrt</button>
+        </div>
+    </div><br>
+    <footer>
+        © 2024 <b class="bs">TIRU-CASIO</b> Calculator | Made with ❤️ by <b class="bs">Tirumala prasad</b>  *_* 
+    </footer>
+
+    <script src="./cal.js"></script>
+</body>
+</html>

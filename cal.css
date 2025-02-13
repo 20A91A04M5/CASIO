@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightskyblue;
+    background-image: url(./bg_cvasio.avif);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#inp {
+    color: #312f2f;
+    width: 260px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #bab8b8;
+}
+#area{
+    background-color:#414040;
+    border-radius: 5px;
+    color: #bab8b8;
+   
+}
+
+#bld {
+    font-size: 14px;
+    color: #555;
+}
+
+button {
+    width: 60px;
+    height: 50px;
+    margin: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#del {
+    background-color: rgb(236, 74, 74);
+}
+
+#del:hover {
+    background-color: #45a049;
+}
+
+#h {
+    color: rgb(242, 213, 47);
+    text-shadow: 3px 4px 5px rgb(64, 63, 63);
+}
+
+#eq {
+    background-color: rgb(94, 204, 240);
+    color: #333;
+}
+
+#eq:hover {
+    background-color: #45a049;
+}
+
+#al {
+    background-color: #555;
+}
+
+#al:hover {
+    background-color: #45a049;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.calculator {
+    width: 280px;
+    padding: 18px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #353434;
+    box-shadow: 10px solid rgba(0, 0, 0, 0.1);
+}
+
+.calculator:hover {
+    transform: scale(1.15);
+    background-color: #2f2d2d;
+    #inp{
+        background-color: #414040;
+        color: #ffff;
+        border: 1px solid #727171;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: medium;
+}
+.bs{
+    color: rgb(249, 249, 25);
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .calculator {
+        transform: scale(0.9);
+        width: 200px;
+        /* height: 450px; */
+        height: auto;
+    }
+
+    button {
+        width: 50px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    #inp {
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+    }
+    #area {
+        width: 200px;
+        height: 60px;
+        font-size: 12px;
+        padding: 5px;
+    }
+    footer{
+        font-size: small;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .calculator {
+        transform: scale(1);
+        /* height: 500px; */
+        height: auto;
+    }
+
+    button {
+        width: 55px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    #inp {
+        width: 240px;
+        height: 38px;
+        font-size: 17px;
+    }
+    #area {
+        width: 220px;
+        height: 50px;
+        font-size: 13px;
+        padding: 6px;
+    }
+    footer{
+        font-size: 90%;
+        
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .calculator {
+        transform: scale(1.1);
+        height: 500px;
+    }
+    button {
+        width: 54px;
+        height: 34px;
+        font-size: 12px;
+    }
+    #area {
+        width: 260px;
+        height: 80px;
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (min-width: 1201px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .calculator {
+        transform: scale(1.2);
+        height: auto;
+    }
+    button {
+        width: 55px;
+        height: 33px;
+        font-size: 12px;
+    }
+    #area {
+        width: 250px;
+        height: 100px;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
